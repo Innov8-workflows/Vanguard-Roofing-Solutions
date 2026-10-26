@@ -1,8 +1,13 @@
-# Whitelist: only the built page and the deploy workflow are published.
-# build.js, site.config.js, _src and the raw client photographs stay local
-# (the site-security gate flags them as S1 if they are served or public).
+# Whitelist: only the built pages and the deploy workflow are published.
+# build.js, generate.js, build-*.js, site.config.js, content/, _src and the raw
+# client photographs/submission stay local (the site-security gate flags them
+# as S1 if they are served or public). _site/ is the multi-page build-out
+# output (site-buildout, 2026-10-25/26): committed directly so the Actions
+# workflow uploads it as-is, never rebuilt on the runner.
 *
 !.gitignore
 !.github/
 !.github/**
 !index.html
+!_site/
+!_site/**
