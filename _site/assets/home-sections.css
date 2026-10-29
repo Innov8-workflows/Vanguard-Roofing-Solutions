@@ -56,3 +56,39 @@ a.as-stat:hover span{color:var(--ink)}
 .rev-grid .rev-body p{display:block;-webkit-line-clamp:unset}
 @media(max-width:960px){.rev-grid{grid-template-columns:1fr 1fr}}
 @media(max-width:620px){.rev-grid{grid-template-columns:1fr}}
+.area-page{background:var(--paper)}
+.area-page .h-sec,.area-svcs .h-sec,.area-around .h-sec,.hub-towns .h-sec{color:var(--ink)}
+.area-page .eyebrow,.area-svcs .eyebrow,.area-around .eyebrow,.hub-towns .eyebrow{color:var(--muted)}
+.proof-list{list-style:none;padding:0;margin:26px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.proof-item{display:flex;gap:14px;align-items:flex-start;background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:18px 20px}
+.proof-item svg{width:20px;height:20px;flex:none;color:var(--brand-dp);margin-top:2px}
+.proof-item p{margin:0;color:var(--ink);font-weight:600}
+.area-svcs{background:var(--paper-2);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.area-svc-grid{grid-template-columns:repeat(3,1fr);margin-top:26px}
+.area-around{background:var(--paper)}
+.area-around-lead{color:var(--muted);max-width:62ch;margin:12px 0 20px}
+.area-village-chips .chip{background:var(--paper-2);border-color:var(--line);color:var(--ink);backdrop-filter:none}
+.area-village-chips .chip svg{color:var(--brand-dp)}
+.area-hub-link{margin-top:24px}
+.area-hub-link a{display:inline-flex;align-items:center;gap:7px;font-family:var(--display);font-weight:700;color:var(--ink);border-bottom:1.5px solid var(--ink);padding-bottom:2px}
+.area-hub-link svg{width:15px;height:15px}
+.hub-towns{background:var(--paper)}
+.town-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
+.town-card{background:var(--paper-2);border:1px solid var(--line);border-radius:var(--r);padding:20px 20px 18px;display:flex;flex-direction:column;gap:6px}
+.town-card--page{background:var(--ink);border-color:var(--ink)}
+.town-card h3{font-family:var(--display);font-weight:800;text-transform:uppercase;font-size:1.12rem;color:var(--ink);margin:0}
+.town-card--page h3,.town-card--page h3 a{color:#fff}
+.town-card h3 a{display:inline-flex;align-items:center;gap:6px}
+.town-card h3 svg{width:16px;height:16px;color:var(--brand)}
+.town-miles{font-family:var(--display);font-weight:700;font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;color:var(--brand-dp)}
+.town-card--page .town-miles{color:var(--brand)}
+.town-villages{color:var(--muted);font-size:.9rem;margin:2px 0 0}
+.town-card--page .town-villages{color:var(--on-ink-2)}
+.town-job{display:flex;gap:8px;align-items:flex-start;margin:8px 0 0;padding-top:10px;border-top:1px solid var(--line);font-size:.88rem;color:var(--ink)}
+.town-card--page .town-job{color:#fff;border-top-color:rgba(255,255,255,.16)}
+.town-job svg{width:16px;height:16px;flex:none;color:var(--brand-dp);margin-top:2px}
+.town-card--page .town-job svg{color:var(--brand)}
+.hub-not-listed{margin-top:26px;color:var(--muted);max-width:62ch}
+@media(max-width:1060px){.town-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:860px){.proof-list,.area-svc-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.town-grid{grid-template-columns:1fr}}
