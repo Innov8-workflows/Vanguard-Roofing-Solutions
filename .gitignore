@@ -11,3 +11,4 @@
 !index.html
 !_site/
 !_site/**
+# media/ (hero clips) reaches the site as _site/media/, copied by build-pages.js
