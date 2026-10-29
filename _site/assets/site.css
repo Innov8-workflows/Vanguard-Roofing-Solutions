@@ -513,7 +513,8 @@ footer h4{font-family:var(--display);font-weight:700;color:var(--brand-lt);font-
 }
 
 blockquote footer{background:none;padding:0}
-.page-head{padding:calc(74px + 54px) 0 54px;background:var(--ink);color:#fff;position:relative}
+.page-head{padding:calc(74px + 64px) 0 64px;background:linear-gradient(90deg,rgba(var(--ink-rgb),.93) 0%,rgba(var(--ink-rgb),.8) 50%,rgba(var(--ink-rgb),.55) 100%),var(--ink) url('page-hero.webp') center 40%/cover;color:#fff;position:relative}
+.page-head .hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px;justify-content:flex-start}
 .page-head::after{content:"";position:absolute;inset:auto 0 0;height:1px;background:rgba(255,255,255,.1)}
 .page-head .wrap{position:relative}
 .crumbs{display:flex;flex-wrap:wrap;gap:6px;font-size:12.5px;color:var(--on-ink-muted);margin-bottom:16px}
@@ -549,6 +550,7 @@ blockquote footer{background:none;padding:0}
 .foot-brand .logo-img{width:130px;height:100px}
 @media (max-width:860px){.brand .logo-img{width:66px;height:50px}}
 .call-pill .num{white-space:nowrap}
+@media (min-width:861px) and (max-width:1060px){.nav-links{gap:clamp(14px,2.2vw,30px)}.nav-links a{white-space:nowrap}}
 @media (max-width:360px){.call-pill{padding:9px 10px;gap:6px}.call-pill .num{font-size:.8rem}}
 .cta-band{background:var(--ink);color:#fff;border-radius:var(--r-lg);padding:clamp(22px,4vw,34px);margin-top:36px}
 .cta-band h2{margin:0 0 8px !important;color:#fff !important}
