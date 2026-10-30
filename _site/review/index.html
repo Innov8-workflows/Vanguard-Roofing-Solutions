@@ -29,10 +29,11 @@
 html{-webkit-text-size-adjust:100%}
 body{font-family:'Inter',system-ui,-apple-system,sans-serif;color:var(--ink);line-height:1.6;background:var(--ink-deep);min-height:100svh;display:flex;align-items:center;justify-content:center;padding:32px 16px}
 .card{width:100%;max-width:560px;background:var(--white);border-radius:20px;overflow:hidden;box-shadow:0 24px 60px -20px rgba(0,0,0,.6)}
-.card-head{position:relative;padding:44px 28px 26px;text-align:center;color:#fff;background:var(--ink) url('/Vanguard-Roofing-Solutions/assets/page-hero.webp') center/cover no-repeat}
-.card-head::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.58) 0%,rgba(0,0,0,.62) 50%,rgba(0,0,0,.9) 100%)}
-.logo-img{position:relative;display:block;margin:0 auto 12px;height:clamp(104px,26vw,132px);width:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.6))}
-.biz-tag{position:relative;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff}
+.card-head{position:relative;padding:64px 28px 28px;text-align:center;color:#fff;background:var(--ink);overflow:hidden}
+.head-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.card-head::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(180deg,rgba(0,0,0,.46) 0%,rgba(0,0,0,.5) 50%,rgba(0,0,0,.88) 100%)}
+.logo-img{position:relative;z-index:2;display:block;margin:0 auto 12px;height:clamp(104px,26vw,132px);width:auto;filter:drop-shadow(0 10px 24px rgba(0,0,0,.6))}
+.biz-tag{position:relative;z-index:2;font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase;color:#fff}
 .card-body{padding:32px 30px 28px;text-align:center}
 .stars{display:flex;justify-content:center;gap:4px;margin-bottom:16px;color:var(--brand)}
 .stars svg{width:26px;height:26px}
@@ -59,6 +60,7 @@ h1{font-family:'Archivo',system-ui,sans-serif;font-weight:900;font-size:clamp(2r
 <body>
 <main class="card">
   <header class="card-head">
+    <video class="head-bg" autoplay muted loop playsinline preload="auto" poster="/Vanguard-Roofing-Solutions/assets/ba1-poster.webp" aria-hidden="true" tabindex="-1"><source src="/Vanguard-Roofing-Solutions/media/ba1.mp4" type="video/mp4"></video>
     <img class="logo-img" src="/Vanguard-Roofing-Solutions/assets/logo.webp" alt="Vanguard Roofing Solutions">
     <p class="biz-tag">Roofing · Sevenoaks, Kent</p>
   </header>
